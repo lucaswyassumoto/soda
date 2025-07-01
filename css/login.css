@@ -1,0 +1,224 @@
+@media (max-width: 770px) {
+  .conteiner {
+    display: flex;
+    height: 100vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 {
+    height: 50vh;
+    width: 50vw;
+    background: transparent;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+    display: flex;
+    position: relative;
+    border-radius: 16px 0 0 16px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section2 {
+    height: 50vh;
+    width: 50vw;
+    overflow: hidden;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 770px) {
+
+  .conteiner {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 {
+    height: 50vh;
+    width: 300px;
+    background: transparent;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+    display: flex;
+    position: relative;
+    border-radius: 16px 0 0 16px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section2 {
+    height: 50vh;
+    width: 370px;
+    overflow: hidden;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(30deg, rgb(175, 178, 255), rgb(49, 83, 188));
+}
+
+@font-face {
+  font-family: OutfitRegular;
+  src: url(../fonts/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+  font-family: OutfitBold;
+  src: url(../fonts/static/Outfit-Bold.ttf);
+}
+
+.conteiner {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dot.active {
+  background-color: black;
+  transform: scale(1.4);
+}
+
+h1 {
+  font-family: OutfitRegular;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  font-size: 27px;
+}
+
+.campos {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+label {
+  font-family: OutfitRegular;
+  color: #ffffff;
+  font-size: 13px;
+  margin: 2px;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: OutfitRegular;
+  transition: 0.3s;
+}
+
+input:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-align: right;
+  text-decoration: none;
+  font-family: OutfitRegular;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+a:hover {
+  transition: 0.3s;
+  color: rgb(255, 255, 255);
+  transform: scale(1.04);
+}
+
+.entrar {
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  border: none;
+  width: 40%;
+  height: 10%;
+  border-radius: 8px;
+  font-family: OutfitBold;
+  color:#1c0031;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.entrar:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+.cadastro {
+  position: relative;
+}
