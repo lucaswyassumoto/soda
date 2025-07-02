@@ -185,7 +185,7 @@ input:focus {
   margin: 20px;
   border: none;
   width: 40%;
-  height: 10%;
+  height: 6vh;
   border-radius: 8px;
   font-family: OutfitBold;
   color:#1c0031;
@@ -212,4 +212,12 @@ a:hover {
   transition: 0.3s;
   color: rgb(255, 255, 255);
   transform: scale(1.04);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
