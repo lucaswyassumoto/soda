@@ -33,7 +33,9 @@ $conn->commit();
 session_start();
 $_SESSION['id_user'] = $id_user;
 
-header("Location: ../html/escolher_username.html");
+header("Location: ../html/escolher_username.php");
+
+exit;
 
 
 $stmt1->close();

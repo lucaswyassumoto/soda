@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,6 +12,17 @@
     <title>Soda - Cadastro</title>
 </head>
 <body>
+
+    <div class="conteiner">
+        <form id="formUsername" action="../php/salvar_username.php" method="post">
+            
+            <h1>Crie um nome de usuário</h1>
+
+            <input type="text" name="username" id="username" required>
+
+            <button type="submit" class="create">Começar</button>
+        </form>
+    </div>
     
 </body>
 </html>
