@@ -13,22 +13,25 @@
     <div class="conteiner">
 
         <div class="section1">
-            <h1>Login</h1>
-            
-            <div class="campos">
-                <label for="user">Nome de usuário</label>
-                <input type="text" name="user">
-            </div>
 
-            <div class="campos">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha">
-                <a href="">Esqueci minha senha</a>
-            </div>
+            <form action="../php/valida_login.php" method="post">
+                <h1>Login</h1>
+                
+                <div class="campos">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" name="username" required>
+                </div>
 
-            <button type="submit" class="entrar">Entrar</button>
+                <div class="campos">
+                    <label for="senha_hash">Senha</label>
+                    <input type="password" name="senha_hash" required>
+                    <a href="">Esqueci minha senha</a>
+                </div>
 
-            <a href="cadastro.html" class="cadastro">Criar conta</a>
+                <button type="submit" class="entrar">Entrar</button>
+
+                <a href="cadastro.html" class="cadastro">Criar conta</a>
+            </form>
 
         </div>
 

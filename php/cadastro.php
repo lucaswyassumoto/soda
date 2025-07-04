@@ -13,11 +13,9 @@ $verifica->execute();
 $verifica->store_result();
 
 if ($verifica->num_rows > 0) {
-    $verifica->close();
-    $conn->close();
-    
+    echo "<script>alert('Este e-mail já está cadastrado!'); history.back();</script>";
+    exit;    
 }
-$verifica->close();
 
 $stmt1 = $conn->prepare("INSERT INTO user (nome, dt_nascimento) VALUES (?, ?)");
 $stmt1->bind_param("ss", $nome, $dt_nascimento);
@@ -33,7 +31,7 @@ $conn->commit();
 session_start();
 $_SESSION['id_user'] = $id_user;
 
-header("Location: ../html/escolher_username.php");
+header("Location: ../php/escolher_username.php");
 
 exit;
 

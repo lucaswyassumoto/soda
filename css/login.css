@@ -95,6 +95,14 @@ html body {
   src: url(../fonts/static/Outfit-Bold.ttf);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .conteiner {
   display: flex;
   height: 100vh;
@@ -205,7 +213,7 @@ a:hover {
   margin: 20px;
   border: none;
   width: 40%;
-  height: 10%;
+  height: 5vh;
   border-radius: 8px;
   font-family: OutfitBold;
   color:#1c0031;
